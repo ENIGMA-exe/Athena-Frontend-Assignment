@@ -1,0 +1,50 @@
+
+@media only screen and (max-width:895px){
+    article>h2{
+        font-size: 2.40rem;
+    }
+}
+@media only screen and (max-width:889px){
+    .mid>.txt{
+        width: 50%;
+    }
+    .mid>.media{
+        width: 50%;
+    }
+    .media>video{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:756px){
+    .mid{
+        height: 100%;
+    }
+    .mid>.media{
+        display: none;
+    }
+    .mid>.txt{
+        width: 100%;
+    }
+    article{
+        height: auto;
+        padding-left: 0;
+        padding-top: 1%;
+    }
+    article>h2{
+        margin: 2% 0;
+    }
+    article>h2,article>h3,article>p{
+        margin-left: 6%;
+    }
+    article>.inner-clip{
+        display: block;
+        width: 80%;
+        margin: 5% auto;
+        height: auto;
+        border-radius: 50px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+}

@@ -1,0 +1,81 @@
+@import 'scss/universal';
+@import 'scss/variables';
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+.App,#root{
+  // text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+// ..............................middle content.......
+.mid{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+//................................text contentent
+.mid>.txt{
+    width: 40%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.mid>.txt::-webkit-scrollbar{
+    display: none;
+}
+article{
+    width: 100%;
+    height: 99%;
+    // border: $border;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 10%;
+    justify-content: center;
+}
+article>h3{
+    font-size: 1.5rem;
+    background-image:$text-color-1;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+article>h2{
+    width: 80%;
+    font-size: 2.75rem;
+    margin: 2% 0;
+    color: $text-color-2;
+}
+article>p{
+    font-size: 1.15rem;
+    color: $text-color-3;
+}
+article>.inner-clip{
+    display: none;
+}
+
+//...........................................media content
+
+.mid>.media{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.media>video{
+    width: 70%;
+    height: 70%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+@import 'scss/media_query';
